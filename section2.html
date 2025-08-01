@@ -1,0 +1,49 @@
+<!-- form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        <!-- text -->
+        Name : <input type="text" name="studentname"/><br><br>
+        <!-- Password -->
+        Password : <input type="password" name="password"/><br><br>
+        <!-- Eamil -->
+        Email : <input type="email" name="email"/><br><br>
+        <!-- Number -->
+        Age : <input type="number" name="number" min="1" max="100"/><br><br>
+        <!-- Radio -->
+        Gender : <input type="radio" name="gender" value="Gender"/>Male
+                <input type="radio" name="gender" value="female"/>female<br><br>
+        <!-- CheckBox -->
+        Hobbies :
+        <input type="checkbox" name="hobbies" value="sports"/>Sports
+        <input type="checkbox" name="hobbies" value="Reading"/>Reading
+        <input type="checkbox" name="hobbies" value="Music"/>Music<br><br>
+        <!-- SelectDropDown -->
+         Branch :
+         <select name="branch">
+            <option value="cse">CSE</option>
+            <option value="ece">ECE</option>
+            <option value="aids">AIDS</option>
+            <option value="mech">MECH</option>
+         </select>
+         <br><br>
+         <!-- TEXTAREA -->
+         Address : <br>
+         <textarea name="address" rows="4" cols="50"></textarea><br><br>
+         <!-- Rating -->
+        SatisfactionLevel (0 to 10) : <input type="range" name="Rating" min="0" max="10"><br><br>
+        <!-- button -->
+        <input type="submit" name="button"><br><br>
+        <button type="button" onclick="Slowly">Click me</button>
+
+
+        </form>
+</body>
+</html>

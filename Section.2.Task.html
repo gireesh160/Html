@@ -1,0 +1,58 @@
+<!-- Full Name
+Roll Number
+Email ID
+Gender (Radio buttons)
+Branch (Dropdown menu)
+Year of Study (Dropdown or text)
+Hobbies (Checkboxes)
+Address (Textarea)
+Phone Number
+The form should include appropriate input elements, use labels for clarity, and include Submit and Reset buttons. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      
+    </script>
+</head>
+
+<body>
+    <form id="a">
+        Name <input type="text" name="Studentname"><br><br>
+        RollNumber <input type="number" max="30" min="4" name="RollNo"><br><br>
+        Email <input type="emial" name="email"><br><br>
+        Gender :
+        <input type="radio" name="male" value="male">Male
+        <input type="radio" name="female" value="female">female<br><br>
+        Branch :
+        <select type="Branch">
+            <option value="cse">CSE</option>
+            <option value="ece">ECE</option>
+            <option value="aids">AIDS</option>
+            <option value="MECH">MECH</option>
+            <option value="civil">CIVIL</option>
+        </select><br><br>
+        Year :
+        <select type="YEAR">
+            <option value="1">1st</option>
+            <option value="2">2nd</option>
+            <option value="3">3rd</option>
+            <option value="4">4th</option>
+        </select><br><br>
+        Hobbies :
+        <input type="checkbox" name="hobbies" value="Sports">Sports
+        <input type="checkbox" name="hobbies" value="Reading">Reading
+        <input type="checkbox" name="hobbies" value="music">Music
+        <br><br>
+        Address :
+        <textarea" name="Address" rows="6" cols="50"></textarea>
+        Phone :
+        <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="10 digits required">
+        <br><br>
+        <button type="submit" onclick="Done">CLICK HERE</button>
+    </form>
+</body>
+</html>

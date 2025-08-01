@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>REGISTRATION FORM</h1>
+    <form onsubmit="return validatefrom()">
+        Name : <input type="text" id="name"><br><br>
+        Email : <input type="text" id="email"><br><br>
+        Password : <input type="password" id="password"><br><br>
+        Phone : <input type="number" id="phone"><br><br> 
+        <input type="submit" value="register"><br><br>
+    </form>
+    <p id="error"></p>
+    <script>
+        function validatefrom(){
+            var name=getElemenById("name").value;
+            var Email=getElemenById("email").value;
+            var Password=getElemenById("password").value;
+            var error=getElemenById("error").value;
+            error.innertext="";
+            if(name==="" email==="" Password===""){
+                error.innertext="All feilds are required!";
+                return false;
+            }
+            if (!emailPattern.test(email)) {
+        error.innerText = "Invalid email format!";
+        return false;
+      }
+
+      // Password length check
+      if (password.length < 6) {
+        error.innerText = "Password must be at least 6 characters long!";
+        return false;
+      }
+
+      alert("Form submitted successfully!");
+      return true; // a
+
+        }
+    </script>
+</body>
+</html>

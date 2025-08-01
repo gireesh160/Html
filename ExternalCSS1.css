@@ -1,0 +1,15 @@
+body{
+    h1{
+        color: antiquewhite;
+        font-size: xx-large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    h2{
+        margin-block: 200px;
+    }
+    form{
+        margin: 25cqb;
+        margin-bottom: auto;
+    }
+}
+/* CREATED TO PROTIFLO */
